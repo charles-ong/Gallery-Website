@@ -1,4 +1,5 @@
 <template>
+    <RouterView/>
     <a-menu
       id="dddddd"
       v-model:openKeys="openKeys"
@@ -7,6 +8,9 @@
       mode="inline"
       @click="handleClick"
     >
+      <a-menu-item key="g0" title="Home">
+        <RouterLink to="/">Home</RouterLink>
+      </a-menu-item>
       <a-sub-menu key="sub1" @titleClick="titleClick">
         <template #icon>
             <CameraOutlined />
@@ -23,7 +27,7 @@
                 <a-menu-item key="2">Melbourne</a-menu-item>
             </a-sub-menu>
             <a-sub-menu key="subsub3" title="South Korea">
-                <a-menu-item key="3">Seoul</a-menu-item>
+                <a-menu-item key="3"><RouterLink to="/Seoul22">Seoul</RouterLink></a-menu-item>
                 <a-menu-item key="4">Busan</a-menu-item>
             </a-sub-menu>
         </a-menu-item-group>
@@ -33,7 +37,7 @@
           <InstagramOutlined />
         </template>
         <template #title>Instagram</template>
-        <a-menu-item key="5">Personal</a-menu-item>
+        <a-menu-item key="5"><RouterLink to="/Personal">Personal</RouterLink></a-menu-item>
         <a-menu-item key="6">SuperSoup</a-menu-item>
       </a-sub-menu>
       <a-sub-menu key="sub3">
