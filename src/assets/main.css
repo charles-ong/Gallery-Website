@@ -1,4 +1,17 @@
-@import './base.css';
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.main {
+  margin-top: 7vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+
+/* @import './base.css';
 
 #app {
   max-width: 1280px;
@@ -32,4 +45,4 @@ a,
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
-}
+} */

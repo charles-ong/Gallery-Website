@@ -1,17 +1,20 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
+
 import App from './App.vue'
 import Home from './pages/Home.vue'
-import Seoul22 from './pages/Seoul22.vue'
-import Personal from './pages/Personal.vue'
+import Photos from './pages/Photos.vue'
+import Instagram from './pages/Instagram.vue'
+import Shop from './pages/Shop.vue'
 
-// import './assets/main.css'
+import './assets/main.css'
 import 'ant-design-vue/dist/antd.css'; // or 'ant-design-vue/dist/antd.less'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
-  { path: '/Seoul22', name: 'Seoul22', component: Seoul22 },
-  { path: '/Personal', component: Personal },
+  { path: '/Photos', name: 'Photos', component: Photos },
+  { path: '/Instagram', component: Instagram },
+  { path: '/Shop', component: Shop },
 ]
 
 const router = createRouter({
