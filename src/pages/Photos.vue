@@ -73,16 +73,17 @@
     
     .thumbnail{
         flex-grow: 1;
-        margin: 2px;
+        margin: 0.5vh;
         background-color: gray;
-        height: 200px;
+        height: 30vh;
     }
 
     img {
-        height: 200px;
+        height: 30vh;
         object-fit: cover;
         max-width: 100%;
         min-width: 100%;
         vertical-align: bottom;
     }
+    
 </style>
