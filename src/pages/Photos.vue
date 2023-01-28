@@ -36,17 +36,22 @@
                 </div>
                 <div id="Kaohsiung">
                     <h1>Kaohsiung 2020</h1>
-                    <div class="gallery">
-                        <a-row :gutter="[8,8]" justify="center">
-                            <a-col :flex="1"><img src="../assets/images/2020/kaosiung/IMG_3983.jpg" class="thumbnail"></a-col>
-                            <a-col :flex="1"><img src="../assets/images/2020/kaosiung/IMG_3972.jpg" class="thumbnail"></a-col>
-                            <a-col :flex="1"><img src="../assets/images/2020/kaosiung/IMG_3973.jpg" class="thumbnail"></a-col>
-                        </a-row>
-                        <a-row :gutter="[8,8]" justify="center">
-                            <a-col :flex="1"><img src="../assets/images/2020/kaosiung/IMG_3992.jpg" class="thumbnail"></a-col>
-                            <a-col :flex="1"><img src="../assets/images/2020/kaosiung/IMG_3993.jpg" class="thumbnail"></a-col>
-                        </a-row>
-                    </div>
+                    <section>
+                        <div class="thumbnail"><img src="https://live.staticflickr.com/65535/49555864352_d4693b34f2_o.jpg" alt="IMG_4017"></div>
+                        <div class="thumbnail"><img src="https://live.staticflickr.com/65535/49555128163_d686afcdf4_o.jpg" alt="IMG_4015"></div>
+                        <div class="thumbnail"><img src="https://live.staticflickr.com/65535/49555865762_4fcc009cd0_o.jpg" alt="IMG_4001"></div>
+                        <div class="thumbnail"><img src="https://live.staticflickr.com/65535/49555866067_7d1bc47a72_o.jpg" alt="IMG_3999"></div>
+                        <!-- <div class="thumbnail"><img src="https://live.staticflickr.com/65535/49555627151_7f4b449ec2_o.jpg" alt="IMG_4005"></div> -->
+                        <div class="thumbnail"><img src="https://live.staticflickr.com/65535/49555866492_7f705f2f91_o.jpg" alt="IMG_3998"></div>
+                        <div class="thumbnail"><img src="https://live.staticflickr.com/65535/49555130368_267f62b66a_o.jpg" alt="IMG_3996"></div>
+                        <div class="thumbnail"><img src="https://live.staticflickr.com/65535/49555130743_c8f5c90212_o.jpg" alt="IMG_3993"></div>
+                        <div class="thumbnail"><img src="https://live.staticflickr.com/65535/49555629486_5e7d76ef80_o.jpg" alt="IMG_3992"></div>
+                        <div class="thumbnail"><img src="https://live.staticflickr.com/65535/49555132168_1be90da763_o.jpg" alt="IMG_3983"></div>
+                        <div class="thumbnail"><img src="https://live.staticflickr.com/65535/49555869152_3e160cdafa_o.jpg" alt="IMG_3979"></div>
+                        <div class="thumbnail"><img src="https://live.staticflickr.com/65535/49555133128_26ebeb1e84_o.jpg" alt="IMG_3974"></div>
+                        <div class="thumbnail"><img src="https://live.staticflickr.com/65535/49555870592_de15adbd07_h.jpg" alt="IMG_3973"></div>
+                        <div class="thumbnail"><img src="https://live.staticflickr.com/65535/49555871142_e565fb06b0_o.jpg" alt="IMG_3970"></div>
+                    </section>
                 </div>
             </div>
         </div>
@@ -61,10 +66,23 @@
 
 <style>
 
+    section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
     .thumbnail{
+        flex-grow: 1;
+        margin: 2px;
+        background-color: gray;
+        height: 200px;
+    }
+
+    img {
+        height: 200px;
         object-fit: cover;
-        max-width: 20vw;
-        /* max-height: auto; */
-        /* padding: 1vh; */
+        max-width: 100%;
+        min-width: 100%;
+        vertical-align: bottom;
     }
 </style>
