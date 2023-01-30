@@ -35,6 +35,13 @@
                     <a-menu-item key="4"><RouterLink to="/Photos#Busan22">Busan</RouterLink></a-menu-item>
                 </a-sub-menu>
             </a-menu-item-group>
+            <a-menu-item-group key="g3">
+                <template #title>2020</template>
+                <a-sub-menu key="subsub4" title="Taiwan">
+                    <a-menu-item key="5"><RouterLink to="/Photos#Taipei20">Taipei</RouterLink></a-menu-item>
+                    <a-menu-item key="6"><RouterLink to="/Photos#Kaohsiung20">Kaohsiung</RouterLink></a-menu-item>
+                </a-sub-menu>
+            </a-menu-item-group>
           </a-sub-menu>
           <a-menu-item key="a2" @titleClick="titleClick">
             <template #icon>

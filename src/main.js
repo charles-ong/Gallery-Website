@@ -21,6 +21,14 @@ const router = createRouter({
   // Provide the history implementation to use. We are using the hash history for simplicity here.
   history: createWebHashHistory(),
   routes,
+  mode: 'history',
+    scrollBehavior: function(to, from, savedPosition) {
+        if (to.hash) {
+            return {el: to.hash}
+        } else {
+            return { x: 0, y: 0 }
+        }
+  },
 })
 
 const app = createApp(App)
